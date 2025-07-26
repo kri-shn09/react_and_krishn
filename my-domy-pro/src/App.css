@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+.logo-box{
+    width:20%;
+}
+
+.nav-items-box{
+    width:30%;
+}
+
+.nav-items-box li:hover{
+    color:Orange;
+}
+
+.nav-btn-box{
+    width:22%;
+}
+
+.nav-btn-box button:hover{
+    background-color:orange;
+}
+
+.nav-btn-box p:hover{
+    color:rgba(0,0,0,0.5)
+}
+
+.nav-box{
+    box-shadow: 1px 1px 5px  rgba(0,0,0,0.5);
+}
+
+/* footer css */
+
+.footer-logo-box{
+    width:20%;
+}
+
+.footer-info-box{
+    width:50%
+}
+
+h4{
+    cursor: pointer;
+}
+
+h4:hover{
+    color:rgba(0,0,0,0.7)
+}
+
+.footer-info-box li{
+    cursor: pointer;
+}
+
+.footer-info-box li:hover{
+    color:rgba(0,0,0,0.7)
+}
+
+.about-img-box{
+    width:40%''
+}
+
+.about-content-box{
+    width:30%;
+}
