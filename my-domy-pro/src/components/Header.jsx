@@ -45,7 +45,16 @@ function Header() {
                     </NavLink>
                 
                   </li>
-                <li className='cursor-pointer' >GitHub</li>
+                <li className='cursor-pointer' >
+                  <NavLink 
+                   to='/github'
+                   className={({isActive})=>
+                     `${isActive ? "text-orange-500" : "text-black"}`
+                  }
+                   >
+                    Github
+                  </NavLink>
+                </li>
             </ul>
         </div>
         <div className="nav-btn-box flex justify-evenly items-center">

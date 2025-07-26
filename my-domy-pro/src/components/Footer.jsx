@@ -1,5 +1,6 @@
 import React from "react";
 import '../App.css'
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -13,12 +14,39 @@ function Footer() {
             <ul className="footer-info-one flex justify-center items-center flex-col"
             >
                 <h4 className="font-bold mb-3">Resources</h4>
-                <li className="mb-2 font-medium">Home</li>
-                <li className="mb-2 font-medium">About</li>
+                <li className="mb-2 font-medium">
+                  <NavLink 
+                   to='/'
+                   className={({isActive})=>
+                      `${isActive ? "text-orange-600" : 'text-black'}`
+                  }
+                   >
+                  Home
+                  </NavLink>
+                  </li>
+                <li className="mb-2 font-medium">
+                  <NavLink 
+                   to='/about'
+                   className={({isActive})=>
+                      `${isActive ? "text-orange-600": 'text-black'}`
+                  }
+                   >
+                  About
+                  </NavLink>
+                </li>
             </ul>
             <ul className="footer-info-two flex justify-center items-center flex-col">
                 <h4 className="font-bold mb-3">Follow Us</h4>
-             <li className="mb-2 font-medium">GitHub</li>
+             <li className="mb-2 font-medium">
+              <NavLink 
+                   to='/github'
+                   className={({isActive})=>
+                      `${isActive ? "text-orange-600" : 'text-black'}`
+                  }
+                   >
+                  GitHub
+                  </NavLink>
+              </li>
              <li className="mb-2 font-medium">Discord</li>
             </ul>
             <ul className="footer-info-three flex justify-center items-center flex-col">
