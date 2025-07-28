@@ -1,12 +1,12 @@
 import React from 'react'
-import useContext from '../Context.js'
+import UserContext from '../Context.js'
 import { useState,useContext } from 'react'
 
 function Login() {
     const [userName , setuserName] = useState('');
     const [password,setPassword] = useState('');
 
-    const {setUser} = useContext(useContext)
+    const {setUser} = useContext(UserContext)
 
     const handleSubmit = (e)=>{
         e.preventDefault();
