@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-const UseCustomHook = () => {
-    const [userInput , setUserInput] = useState([]);
-    const setItems = localStorage.setItem(myTask ,  JSON.stringify(userInput)); 
+// const UseCustomHook = () => {
+//     const [userInput , setUserInput] = useState([]);
+//     const setItems = localStorage.setItem(myTask ,  JSON.stringify(userInput)); 
 
 
-}
+// }
