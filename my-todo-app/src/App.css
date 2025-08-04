@@ -21,9 +21,16 @@
 }
 
 form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:12rem;
     margin-top: 3rem;
     box-shadow: 0px 0px 3px 1px #ccc;
     padding:1.5rem 1rem;
+    overflow-y: scroll;
+
 }
 
 form input, .grn-icon-box{
